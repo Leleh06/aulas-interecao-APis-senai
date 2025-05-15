@@ -1,0 +1,30 @@
+#container{
+    display: flex;
+    width: 1280px;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 10px;
+
+    .users{
+        width: 200px;
+        box-shadow: 0 0 10px #aaa;
+        padding: 10px;
+        img{
+            max-width: 100%;
+        }
+        h2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            color: #505050;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10px;
+            color: #505050;
+        }
+    }
+}
+
+h1{
+    margin-left: 25px;
+}
