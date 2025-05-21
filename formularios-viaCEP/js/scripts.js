@@ -28,9 +28,15 @@ cepInput.addEventListener("blur", () => {
                     document.querySelector("#bairro").value = data.bairro
                     document.querySelector("#cidade").value = data.localidade
                     document.querySelector("#estado").value = data.uf
-                } else {
+                }else{
                     console.log("Cep não encontrado")
                 }
             })
+            .catch(error =>{
+                alert("Erro ao buscar CEP")
+                console.error(error)
+            })
+    }else{
+        alert("CEP inválido")
     }
 })
